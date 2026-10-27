@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SyncVault Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #1b1f24;
+      --muted: #5b6470;
+      --accent: #00838f;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #00183a;
+        --fg: #e8edf3;
+        --muted: #a9b4c2;
+        --accent: #00bcd4;
+      }
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+
+    main {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 2.5rem 16px 4rem;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      margin: 0 0 .25rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin: 2rem 0 .5rem;
+    }
+
+    .date {
+      color: var(--muted);
+      margin: 0 0 2rem;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    ul {
+      padding-left: 1.25rem;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>SyncVault Privacy Policy</h1>
+    <p class="date">Effective 27 October 2026</p>
+
+    <p>SyncVault backs up folders from your Android phone to a server you set up and control, over SFTP. This policy
+      explains what the app does with your data. The short version: the developer never receives any of your data.</p>
+
+    <h2>Data the developer collects</h2>
+    <p>None. SyncVault has no accounts, ads, analytics, crash reporting or tracking, and it doesn't contact any server
+      run by the developer or by third parties.</p>
+
+    <h2>Data sent to your server</h2>
+    <p>When you run a backup, Preview or Test connection, SyncVault connects only to the server you entered. It sends:
+    </p>
+    <ul>
+      <li>copies of the files in the phone folders you chose to back up, along with their names, sizes and modification
+        times;</li>
+      <li>the user name you entered, and an SSH login made with the phone's key.</li>
+    </ul>
+    <p>Everything is sent over an encrypted SSH connection. What happens to the files on that server is up to you, the
+      person who runs it.</p>
+
+    <h2>Data stored on your phone</h2>
+    <ul>
+      <li><strong>Settings:</strong> the server address, port, user name and backup folder, your schedule and options,
+        and the server's host key that you trusted.</li>
+      <li><strong>The phone's SSH key:</strong> an Ed25519 key pair created by the app. The private key never leaves the
+        phone. You copy only the public key to your server.</li>
+      <li><strong>Folder access:</strong> read-only permission, granted through Android's folder picker, to the folders
+        you chose. SyncVault never changes or deletes files on your phone.</li>
+    </ul>
+    <p>This data stays in the app's private storage and is left out of Android's cloud backups. Uninstalling the app
+      deletes it.</p>
+
+    <h2>Permissions</h2>
+    <ul>
+      <li><strong>Network access:</strong> to connect to your server, and to check that you're on Wi-Fi.</li>
+      <li><strong>Notifications and foreground service:</strong> to show backup progress and results.</li>
+      <li><strong>Alarms and running at startup:</strong> to start scheduled backups on time, including after a restart.
+      </li>
+    </ul>
+
+    <h2>Sharing</h2>
+    <p>The developer doesn't sell or share data with anyone, because the developer doesn't have any. Your files go only
+      to the server you set up.</p>
+
+    <h2>Children</h2>
+    <p>SyncVault isn't aimed at children and doesn't knowingly collect data from anyone.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the new version will be posted here with a new effective date.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy: <a href="mailto:s.illes79@gmail.com">s.illes79@gmail.com</a></p>
+  </main>
+</body>
+
+</html>
