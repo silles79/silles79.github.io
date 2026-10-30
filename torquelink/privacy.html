@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TorqueLink Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #1c1b1f;
+      --muted: #625b71;
+      --accent: #6650a4;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1c1b1f;
+        --fg: #e6e1e5;
+        --muted: #ccc2dc;
+        --accent: #d0bcff;
+      }
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+
+    main {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 2.5rem 16px 4rem;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      margin: 0 0 .25rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin: 2rem 0 .5rem;
+    }
+
+    .date {
+      color: var(--muted);
+      margin: 0 0 2rem;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    ul {
+      padding-left: 1.25rem;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>TorqueLink Privacy Policy</h1>
+    <p class="date">Last updated 30 October 2026</p>
+
+    <p>TorqueLink is an Android app for car diagnostics, off-road tools and an offline weather station. It is made by an
+      independent developer ("I" below).</p>
+
+    <h2>The short version</h2>
+    <p>TorqueLink collects no personal data. It has no account, no ads, no analytics and no crash reporting. It doesn't
+      ask Android for internet access, so it can't send anything anywhere by itself. Everything it records stays on your
+      phone unless you choose to share it.</p>
+
+    <h2>What the app uses, and why</h2>
+    <p><strong>Bluetooth.</strong> To connect to the OBD-II adapter you pick, and to read data from your car through it.
+      The app only reads from the car, except when you ask it to clear trouble codes.</p>
+    <p><strong>Location.</strong> Used only:</p>
+    <ul>
+      <li>to calibrate the altitude reading from GPS, when you tap to do so;</li>
+      <li>on Android 11 and older, because Android requires location permission to find Bluetooth devices.</li>
+    </ul>
+    <p>Your location is not stored, apart from the altitude result, and never leaves the phone.</p>
+    <p><strong>Motion sensors and barometer.</strong> For the inclinometer, compass, G-meter, altitude, climb counter and
+      weather station. Readings are processed on the phone.</p>
+    <p><strong>Notifications and running in the background.</strong> The climb counter and the weather station, when you
+      turn them on, show a notification and keep working while the app is closed. The weather station restarts its
+      readings after the phone reboots.</p>
+
+    <h2>What is stored on your phone</h2>
+    <ul>
+      <li>Your settings, such as units, calibrations and warning angles.</li>
+      <li>Trip figures.</li>
+      <li>The last car's VIN (vehicle identification number), so the app knows which car it is connected to.</li>
+      <li>Weather station readings, kept for 7 days and then deleted.</li>
+    </ul>
+    <p>All of this stays in the app's private storage. It is deleted when you uninstall the app or clear its data in
+      Android settings.</p>
+
+    <h2>When you share something</h2>
+    <p>Some screens have buttons to share a log, the diagnostics report, trouble codes, weather readings or a feature
+      request. These open Android's share sheet or your email app, and nothing is sent until you choose where it goes
+      and send it yourself. The diagnostics report can include your car's VIN and the adapter's details. If you send it
+      to me, I use it only to fix problems and improve the app, I don't pass it on, and I'll delete it on request.</p>
+
+    <h2>Third parties</h2>
+    <p>TorqueLink contains no third-party SDKs for advertising, analytics or tracking. It is installed through Google
+      Play, which collects its own data under <a href="https://policies.google.com/privacy">Google's privacy
+        policy</a>.</p>
+    <p><strong>Supporting TorqueLink.</strong> The optional support purchase is handled entirely by Google Play.
+      TorqueLink only asks the Play Store app on your phone whether it has been bought; it never sees your payment
+      details. As with any purchase on Google Play, Google gives me an order record, which I use only for refunds and
+      support. The Play Billing library's own usage logging is left out of TorqueLink, so it doesn't send anything
+      either.</p>
+
+    <h2>Children</h2>
+    <p>The app is not aimed at children and collects no data from anyone.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the new version will be posted here with a new date.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy: <a href="mailto:s.illes79@gmail.com">s.illes79@gmail.com</a></p>
+  </main>
+</body>
+
+</html>
